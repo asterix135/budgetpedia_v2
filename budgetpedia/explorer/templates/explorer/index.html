@@ -1,0 +1,157 @@
+{% extends 'explorer/base.html' %}
+{% block content %}
+{% load static %}
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="input-group">
+          <input type="text" class="form-control"
+            placeholder="What do you want to know about Toronto's budget?">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2 class="panel-title h2">Some common budget questions</h2>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="">Police Budget</a>
+          </div>
+          <div class="col=sm-6">
+            <a href="">City council office budgets</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="">Social services funding</a>
+          </div>
+          <div class="col=sm-6">
+            <a href="">Property tax changes by ward</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="">Fire department staffing changes</a>
+          </div>
+          <div class="col=sm-6">
+            <a href="">etc...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h2 class="panel-title h2">Budgetpedia Resources</h2>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <object data="{% static "explorer/images/ic_explore.svg" %}" type="image/svg+xml" width="200" height="200">
+            <embed src="{% static "explorer/images/ic_explore.svg" %}" type="image/svg+xml" width="200" height="200" />
+          </object>
+          <div class="caption">
+            <h3>Explore the Budget</h3>
+            <p>
+              Interactive tools you can use to explore and better understand Toronto's budget.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">Go!</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <object data="{% static "explorer/images/ic_map.svg" %}" type="image/svg+xml" width="200" height="200">
+            <embed src="{% static "explorer/images/ic_map.svg" %}" type="image/svg+xml" width="200" height="200" />
+          </object>
+          <div class="caption">
+            <h3>The Budget Process</h3>
+            <p>
+              Key dates in budget development; Who does what when;  How to get
+              in touch with budget decision-makers
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">Go!</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <object data="{% static "explorer/images/ic_directions_walk.svg" %}" type="image/svg+xml" width="200" height="200">
+            <embed src="{% static "explorer/images/ic_directions_walk.svg" %}" type="image/svg+xml" width="200" height="200" />
+          </object>
+          <div class="caption">
+            <h3>How to Have an Impact on the Budget</h3>
+            <p>
+              Stories of people who have made changes and resources to help you
+              get involved with the budget
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">Go!</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <object data="{% static "explorer/images/ic_library_books.svg" %}" type="image/svg+xml" width="200" height="200">
+            <embed src="{% static "explorer/images/ic_library_books.svg" %}" type="image/svg+xml" width="200" height="200" />
+          </object>
+          <div class="caption">
+            <h3>Other Resources</h3>
+            <p>
+              External websites and organizations with information on the budget
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">Go!</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <object data="{% static "explorer/images/ic_announcement.svg" %}" type="image/svg+xml" width="200" height="200">
+            <embed src="{% static "explorer/images/ic_announcement.svg" %}" type="image/svg+xml" width="200" height="200" />
+          </object>
+          <div class="caption">
+            <h3>Join the Conversation</h3>
+          </div>
+          <p>
+            Social media and other resources where you can talk to other people
+            passionate about public finance.
+          </p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">Go!</a>
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <object data="{% static "explorer/images/ic_info.svg" %}" type="image/svg+xml" width="200" height="200">
+            <embed src="{% static "explorer/images/ic_info.svg" %}" type="image/svg+xml" width="200" height="200" />
+          </object>
+          <div class="caption">
+            <h3>About Budgetpedia</h3>
+            <p>
+              Who we are.  What's happening with Budgetpedia.
+              How you can get involved.
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">Go!</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

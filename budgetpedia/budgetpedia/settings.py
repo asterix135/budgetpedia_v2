@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import mimetypes
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,12 +26,14 @@ SECRET_KEY = ')41w_xf)!(vyemqky__0ins8rxn^!^ht63*j2ec9%_vj6v*5tk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',
+                 '127.0.0.1',]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'explorer.apps.ExplorerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +78,11 @@ WSGI_APPLICATION = 'budgetpedia.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'budgetpedia',
+        'USER': 'budgetpedia',
+        'PASSWORD': 'budgetpedia',
+        'HOST': 'localhost'
     }
 }
 
@@ -105,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Toronto'
 
 USE_I18N = True
 
@@ -116,5 +122,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+
+# handle svg files
+mimetypes.add_type("image/svg+xml", ".svg", True)
+mimetypes.add_type("image/svg+xml", ".svgz", True)
 
 STATIC_URL = '/static/'
