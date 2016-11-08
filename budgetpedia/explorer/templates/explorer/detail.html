@@ -8,39 +8,71 @@
     <h1>Budget Details</h1>
   </div>
 </div>
+
 <div class="container">
   <div class="row">
-    <h2>Police Budget Details</h2>
-    <p>
-      Money used to enforce laws, stop random black people on the street, etc.
-    </p>
-  </div>
-  <div class="row">
-    <h3>Where this fits into the budget Hierarchy</h3>
-    <p>
-      <a href="">Expenses</a><br />
-      &nbsp;|_<a href="">Citizen Support Services</a><br />
-      &nbsp;&nbsp;|_<a href="">Emergency Services</a><br />
-      &nbsp;&nbsp;&nbsp;|_<a href="">Police and Court Services</a><br />
-      &nbsp;&nbsp;&nbsp;&nbsp;|_<strong>Toronto Police Services</strong>
-      <br />
-      <a href="">Revenue</a><br />
-      &nbsp;|_<a href="">Provincial Transfers</a><br />
-      &nbsp;&nbsp;|_<strong>Police Transfers</strong>
-    </p>
-  </div>
-  <div class="row">
-    <h3>Changes over time</h3>
-    <h5>(Explorer goes here?)</h5>
-    <img src="{% static "explorer/images/police_sample.png" %}" width="300"/>
-  </div>
-  <div class="row">
-    <h3>Police Expenses compared to Overall Budget</h3>
-    <div class="row">
-      <img src="{% static "explorer/images/sample_pie_chart.jpg" %}" width="500"/>
+    <div class="col-md-7">
+      <h2>Police Budget Details</h2>
+      <p>
+        Money used to enforce laws, arrest people, stand around at construction
+        sites, etc.
+      </p>
+
+      <h3>Where this fits into the budget Hierarchy</h3>
+      <p>
+        <a href="">Expenses</a><br />
+        &nbsp;|_<a href="">Citizen Support Services</a><br />
+        &nbsp;&nbsp;|_<a href="">Emergency Services</a><br />
+        &nbsp;&nbsp;&nbsp;|_<a href="">Police and Court Services</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;|_<strong>Toronto Police Services</strong>
+        <br />
+        <a href="">Revenue</a><br />
+        &nbsp;|_<a href="">Provincial Transfers</a><br />
+        &nbsp;&nbsp;|_<strong>Police Transfers</strong>
+        <br />
+        <a href="">Staffing</a><br />
+        &nbsp;|_<a href="">Citizen Support Services</a><br />
+        &nbsp;&nbsp;|_<a href="">Emergency Services</a><br />
+        &nbsp;&nbsp;&nbsp;|_<a href="">Police and Court Services</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;|_<strong>Toronto Police Services</strong><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_<a hef="">Uniformed Personnel</a><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_<a hef="">Civilian Personnel</a><br />
+      </p>
+
+      <h3>Changes over time</h3>
+      <h5>(Explorer goes here?)</h5>
+      <img src="{% static "explorer/images/police_sample.png" %}" width="300"/>
 
     </div>
+
+    <div class="col-md-4">
+      <h3>Police Expendutures compared to the Total Budget</h3>
+      <img src="{% static "explorer/images/police_budget_pie.png" %}" width="400" />
+
+      <h3>Who's responsible for the Police Budget</h3>
+        <ul>
+          <li>
+            <a href="http://www.tpsb.ca">Toronto Police Services Board</a>
+            <p>
+              416-808-8080
+            </p>
+          </li>
+          <li>
+            Staff members
+          </li>
+          <li>
+            Somebody else
+          </li>
+        </ul>
+
+      <h3>Key Dates and Meetings</h3>
+      <ul>
+        
+      </ul>
+    </div>
+
   </div>
+
 </div>
 
 {% endblock %}

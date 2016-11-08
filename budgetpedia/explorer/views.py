@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from chartit import Chart, DataPool
 
 # Create your views here.
 
@@ -15,4 +16,5 @@ def impact(request):
 
 
 def detail(request):
+    # play with chartit to figure out how to serve pie chart
     return render(request, 'explorer/detail.html')
