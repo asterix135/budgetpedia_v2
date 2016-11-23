@@ -18,3 +18,7 @@ def impact(request):
 def detail(request):
     # play with chartit to figure out how to serve pie chart
     return render(request, 'explorer/detail.html')
+
+
+def test(request):
+    return render(request, 'explorer/test.html')
