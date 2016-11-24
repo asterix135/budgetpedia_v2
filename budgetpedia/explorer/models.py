@@ -23,3 +23,13 @@ class CostDetails(models.Model):
     amount = models.IntegerField()
     multiplier = models.IntegerField()
     currency = models.CharField(max_length=15)
+
+
+class Muncipality(models.Model):
+    municipality = models.CharField(max_length=100)
+
+
+class ClosureTable(models.Model):
+    ancestor = models.ForeignKey(LineItem, related_name='ancestor')
+    descendant = models.ForeignKey(LineItem, related_name='descendant')
+    depth = models.IntegerField()
