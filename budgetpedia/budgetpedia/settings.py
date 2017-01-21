@@ -27,7 +27,8 @@ SECRET_KEY = ')41w_xf)!(vyemqky__0ins8rxn^!^ht63*j2ec9%_vj6v*5tk'
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-                 '127.0.0.1',]
+                 '127.0.0.1',
+                 'asterix135.pythonanywhere.com']
 
 
 # Application definition
