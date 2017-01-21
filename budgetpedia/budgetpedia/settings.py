@@ -127,4 +127,4 @@ mimetypes.add_type("image/svg+xml", ".svgz", True)
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, "static")
-STATIC_ROOT = '/home/asterix135/budgetpedia_v2/budgetpedia'
+STATIC_ROOT = '/home/asterix135/budgetpedia_v2/budgetpedia/static'
